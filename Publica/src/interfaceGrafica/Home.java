@@ -16,7 +16,7 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.JSeparator;
 
-//Tela principal
+//Tela principal da Aplicação
 public class Home extends javax.swing.JFrame {
 	//Atributos privados da classe
 	private JFrame home;
