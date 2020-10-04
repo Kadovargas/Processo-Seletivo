@@ -31,7 +31,7 @@ public class Jogo {
 		return lista;
 	}
 
-	// Retor maior pontuação
+	// Retorna maior pontuação
 	public int getMaior() {
 		int num = 0;
 		int maior = 0;
