@@ -31,14 +31,14 @@ public class InserePontos extends javax.swing.JFrame{
 		getContentPane().add(tfPontos);
 		tfPontos.setColumns(10);
 		
+		//Botão para registrar pontos
 		JButton btIncluir = new JButton("Incluir");
 		btIncluir.setBounds(150, 44, 90, 23);
 		getContentPane().add(btIncluir);
 		btIncluir.setEnabled(false);
-		
+		//Eventos do botão incluir
 		btIncluir.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-							
 				int capturaPonto;
 				capturaPonto = Integer.parseInt(tfPontos.getText());	
 				jogo.setPontos(capturaPonto);	
@@ -48,7 +48,7 @@ public class InserePontos extends javax.swing.JFrame{
 			}
 		});
 		
-		
+		//Botao para consultar pontos registrados
 		JButton btConsultar = new JButton("Consultar Pontos");
 		btConsultar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -59,6 +59,7 @@ public class InserePontos extends javax.swing.JFrame{
 		btConsultar.setBounds(10, 100, 150, 23);
 		getContentPane().add(btConsultar);
 		
+		//Botão para inserir novo jogo
 		JButton btNovoJogo = new JButton("Novo Jogo");
 		btNovoJogo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -70,6 +71,7 @@ public class InserePontos extends javax.swing.JFrame{
 		btNovoJogo.setBounds(11, 13, 129, 23);
 		getContentPane().add(btNovoJogo);
 		
+		//Botão para sair do sistema
 		JButton btSair = new JButton("Sair");
 		btSair.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
@@ -79,6 +81,7 @@ public class InserePontos extends javax.swing.JFrame{
 		btSair.setBounds(247, 13, 89, 23);
 		getContentPane().add(btSair);
 		
+		//BoTão para mostrar maior pontuação
 		JButton btMaiorPonto = new JButton("Maior Pontua\u00E7\u00E3o");
 		btMaiorPonto.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -90,6 +93,7 @@ public class InserePontos extends javax.swing.JFrame{
 		btMaiorPonto.setBounds(10, 130, 150, 23);
 		getContentPane().add(btMaiorPonto);
 		
+		//Botão para mostrar menor pontuação
 		JButton btMenorPonto = new JButton("Menor Pontua\u00E7\u00E3o");
 		btMenorPonto.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -99,6 +103,7 @@ public class InserePontos extends javax.swing.JFrame{
 		btMenorPonto.setBounds(10, 160, 150, 23);
 		getContentPane().add(btMenorPonto);
 		
+		//Botão para mostrar quantas vezes record minimo foi quebrado
 		JButton btRecMinimo = new JButton("Record M\u00EDnimo");
 		btRecMinimo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -108,6 +113,7 @@ public class InserePontos extends javax.swing.JFrame{
 		btRecMinimo.setBounds(10, 190, 150, 23);
 		getContentPane().add(btRecMinimo);
 		
+		//Botão para mostrar quantas vezes record maximo foi quebrado
 		JButton btRecMaximo = new JButton("Record M\u00E1ximo");
 		btRecMaximo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -117,6 +123,7 @@ public class InserePontos extends javax.swing.JFrame{
 		btRecMaximo.setBounds(10, 220, 150, 23);
 		getContentPane().add(btRecMaximo);
 		
+		//Botão para mostrar total de pontos
 		JButton btTotalPontos = new JButton("Total Pontos");
 		btTotalPontos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -126,7 +133,8 @@ public class InserePontos extends javax.swing.JFrame{
 		});
 		btTotalPontos.setBounds(186, 100, 150, 23);
 		getContentPane().add(btTotalPontos);
-		
+
+		//Botão para mostrar média de pontos
 		JButton btMediaPontos = new JButton("M\u00E9dia Pontos");
 		btMediaPontos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
