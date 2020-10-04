@@ -1,2 +1,32 @@
-Publica
-Projeto desenvolvido para participar do desafio do Programa de Formação de Talentos da empresa Pública de Blumenau-SC
+Projeto Publica.
+Descrição: Projeto desenvolvido para participar do desafio do Programa de Formação de Talentos da empresa Pública de Blumenau-SC.
+
+Instruções e informações do projeto:
+A aplicação foi escrita utilizando a linguagem de programação Java, version 8 Update 261 (Build 1.8_261-b12).
+Foi construído utilizando a IDE Eclipse for Java Developers - 2020-06.
+Para a criação da interface Gráfica foi utilizado o Plugin WindowsBuilder 1.9.4.
+Para fazer o controle de versão foi utilizado o plugin para Eclipse, EGIT, que utiliza implementação Java do Git (Jgit) e possibilita controlar 
+projetos do Eclipse com o GitHub.
+
+Uso do sistema:
+A aplicação propõe uma solução de controle de pontos para um jogo Basquete. 
+Para rodar a aplicação é necessário executar o projeto na IDE Eclipse, ao executá-lo será carregada a 1º tela da aplicação (classe Home) com a opção de "Menu".
+Ao clicar nessa opção são mostradas duas novas opções ao usuário do sistema: "Registrar Jogo" e "Sair".
+Caso seja selecionada a opção "Sair" o sistema será encerrado. Caso seja selecionada a opção "Registrar Jogo" uma nova tela irá abrir com novas opções.
+Para iniciar um registro de pontos de um novo jogo é necessário clicar no botão "Novo Jogo", esse por sua vez irá habilitar campo para inserção dos pontos.
+Devem ser informados apenas números inteiros nessa caixa de texto, positivos e menores que 1000. Após informar o número é necessário clicar no botão "Incluir" 
+para concretizar a criação de um novo jogo.
+Esse processo pode ser repetido quantas vezes o usuário julgar necessário e irá criar um "banco de dados" armazenado numa ArrayList, das informações em tempo de execução.
+Após registrar a 1ª pontuação, ou seja o primeiro jogo, já é possível utilizar os botões de consulta de informações.
+Para consultar os pontos dos Jogos registrados é necessário clicar no botão "Consultar Pontos", que basicamente retorna a lista de pontos dos jogos informada 
+pelo usuário.
+Temos na interface, logo abaixo desse, o botão "Maior pontuação", que se acionado retorna o maior valor digitado pelo usuário. 
+O botão "Menor pontuação", que como o nome sugere retorna a menor pontuação informada pelo usuário.
+Abaixo ainda temos os botões "Record Mínimo" e "Record Máximo", que como sugerem os nomes, retornam quantas vezes cada recorde foi "quebrado".
+Na mesma tela, ainda temos os botões "Total pontos", que retorna a soma de todos os pontos informados, e "Média Pontos", botão que 
+retorna a média de pontos da temporada.
+Importante, a qualquer instante o usuário pode interromper a execução do sistema através do botão: "Sair" ou no botão "close" localizado no canto superior direito
+da tela.
+
+
+
