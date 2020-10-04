@@ -18,11 +18,11 @@ import javax.swing.JSeparator;
 
 //Tela principal
 public class Home extends javax.swing.JFrame {
-	
+	//Atributos privados da classe
 	private JFrame home;
 	private JMenu menuOpcoes;
 
-	
+	//Carregamento inicial da tela
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -37,15 +37,13 @@ public class Home extends javax.swing.JFrame {
 		});
 	}
 
-	
+	//Iniciando componentes de tela
 	public Home() {
-		initComponents();
-		
+		initComponents();		
 	}
 
-	
+	//inicializacao e parametrizacao dos componetes da tela
 	private void initComponents() {
-		//inicializacao e parametrizacao dos componetes da tela
 		home = new JFrame();
 		home.setTitle("Basquete");
 		home.setSize(400, 400);
@@ -58,7 +56,7 @@ public class Home extends javax.swing.JFrame {
 		menuOpcoes = new JMenu("Menu");
 		menuBar.add(menuOpcoes);
 		
-		//Opcoes do Menu
+		//Opcoes do Menu - Registrar Jogo
 		JMenuItem mnItemNovo = new JMenuItem("Registrar Jogo");
 		menuOpcoes.add(mnItemNovo);
 		
@@ -75,6 +73,7 @@ public class Home extends javax.swing.JFrame {
 		JSeparator separator_1 = new JSeparator();
 		menuOpcoes.add(separator_1);
 		
+		//Opção do menu -  Sair
 		JMenuItem mnItemSair = new JMenuItem("Sair");
 		menuOpcoes.add(mnItemSair);
 		home.getContentPane().setLayout(null);
