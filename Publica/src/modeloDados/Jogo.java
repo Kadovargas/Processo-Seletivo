@@ -14,7 +14,7 @@ public class Jogo {
 	// Através do botão "Pontos" na interface do usuário
 	public void setPontos(int pontos) {
 		this.pontos = pontos;
-		//valida se ponto informado esta na faixa permitida nos requisitos
+		//valida se o ponto informado esta na faixa permitida nos requisitos do sistema
 		if (pontos < 1000 && pontos > -1) {
 			lista.add(this.pontos);
 		}
