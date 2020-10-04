@@ -45,6 +45,8 @@ public class InserePontos extends javax.swing.JFrame{
 				tfPontos.setText("");
 				tfPontos.setEditable(false);
 				btIncluir.setEnabled(false);
+				
+				JOptionPane.showMessageDialog(null,"Ponto registrado!");
 			}
 		});
 		
@@ -52,7 +54,7 @@ public class InserePontos extends javax.swing.JFrame{
 		JButton btConsultar = new JButton("Consultar Pontos");
 		btConsultar.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				JOptionPane.showMessageDialog(null, Jogo.getLista());
+				JOptionPane.showMessageDialog(null, "Pontos registrados: " + Jogo.getLista());
 				
 			}
 		});
@@ -82,11 +84,11 @@ public class InserePontos extends javax.swing.JFrame{
 		getContentPane().add(btSair);
 		
 		//BoTão para mostrar maior pontuação
-		JButton btMaiorPonto = new JButton("Maior Pontua\u00E7\u00E3o");
+		JButton btMaiorPonto = new JButton("Maior Pontuação");
 		btMaiorPonto.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				
-				JOptionPane.showMessageDialog(null, jogo.getMaior());
+				JOptionPane.showMessageDialog(null, "Maior pontuação da temporada: " + jogo.getMaior());
 				
 			}
 		});
@@ -94,30 +96,30 @@ public class InserePontos extends javax.swing.JFrame{
 		getContentPane().add(btMaiorPonto);
 		
 		//Botão para mostrar menor pontuação
-		JButton btMenorPonto = new JButton("Menor Pontua\u00E7\u00E3o");
+		JButton btMenorPonto = new JButton("Menor Pontuação");
 		btMenorPonto.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(null, jogo.getMenor());
+				JOptionPane.showMessageDialog(null, "Menor pontuação da temporada: " + jogo.getMenor());
 			}
 		});
 		btMenorPonto.setBounds(10, 160, 150, 23);
 		getContentPane().add(btMenorPonto);
 		
 		//Botão para mostrar quantas vezes record minimo foi quebrado
-		JButton btRecMinimo = new JButton("Record M\u00EDnimo");
+		JButton btRecMinimo = new JButton("Record Mínimo");
 		btRecMinimo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(null, jogo.getQuantVezesRecordMenor());
+				JOptionPane.showMessageDialog(null, "Recorde mínimo foi quebrado " + jogo.getQuantVezesRecordMenor() + " vez(es)");
 			}
 		});
 		btRecMinimo.setBounds(10, 190, 150, 23);
 		getContentPane().add(btRecMinimo);
 		
 		//Botão para mostrar quantas vezes record maximo foi quebrado
-		JButton btRecMaximo = new JButton("Record M\u00E1ximo");
+		JButton btRecMaximo = new JButton("Record Máximo");
 		btRecMaximo.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(null, jogo.getQuantVezesRecordMaior());
+				JOptionPane.showMessageDialog(null, "Recorde máximo foi quebrado " + jogo.getQuantVezesRecordMaior() + " vez(es)");
 			}
 		});
 		btRecMaximo.setBounds(10, 220, 150, 23);
@@ -127,7 +129,7 @@ public class InserePontos extends javax.swing.JFrame{
 		JButton btTotalPontos = new JButton("Total Pontos");
 		btTotalPontos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(null, jogo.getSomaElementosLista());
+				JOptionPane.showMessageDialog(null,"Total de pontos da temporada: " + jogo.getSomaElementosLista());
 	
 			}
 		});
@@ -135,10 +137,10 @@ public class InserePontos extends javax.swing.JFrame{
 		getContentPane().add(btTotalPontos);
 
 		//Botão para mostrar média de pontos
-		JButton btMediaPontos = new JButton("M\u00E9dia Pontos");
+		JButton btMediaPontos = new JButton("Média Pontos");
 		btMediaPontos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				JOptionPane.showMessageDialog(null, jogo.getMediaPontos());
+				JOptionPane.showMessageDialog(null, "Média de pontos da temporada: " + jogo.getMediaPontos());
 			}
 			
 		});
