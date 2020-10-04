@@ -1,34 +1,30 @@
 package interfaceGrafica;
 
-import java.awt.EventQueue;
-
-import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
-
 import modeloDados.Jogo;
-
 import javax.swing.JButton;
-import javax.swing.JTable;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class InserePontos extends javax.swing.JFrame{
-
-	//private JFrame frame;
-	private JTextField tfPontos;
+	
 	Jogo jogo = new Jogo();
+	private JTextField tfPontos;
 	
 	public InserePontos() {
 		setLocation(0, -26);
+		//Atribuir nome para a tela
 		setTitle("Inserir Pontos");
 		getContentPane().setLayout(null);
 		
+		//Label descrição do campo
 		JLabel lbPontos = new JLabel("Pontos:");
 		lbPontos.setBounds(10, 47, 46, 20);
 		getContentPane().add(lbPontos);
 		
+		//Campo TF para informar pontos
 		tfPontos = new JTextField();
 		tfPontos.setEditable(false);
 		tfPontos.setBounds(53, 44, 90, 23);
