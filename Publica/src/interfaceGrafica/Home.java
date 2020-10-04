@@ -16,7 +16,6 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.JSeparator;
 
-//Classe principal do sistema - Home
 
 public class Home extends javax.swing.JFrame {
 	
