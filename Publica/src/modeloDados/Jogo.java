@@ -1,6 +1,5 @@
 package modeloDados;
 
-import java.text.DecimalFormat;
 import java.util.ArrayList;
 
 public class Jogo {
@@ -9,12 +8,13 @@ public class Jogo {
 	private int pontos;
 	private static ArrayList<Integer> lista = new ArrayList<Integer>();
 
-	// Metodos
+	// METODOS
 
 	// Método para setar os pontos no objeto do tipo ArrayLista "Lista"
 	// Através do botão "Pontos" na interface do usuário
 	public void setPontos(int pontos) {
 		this.pontos = pontos;
+		//valida se ponto informado esta na faixa permitida nos requisitos
 		if (pontos < 1000 && pontos > -1) {
 			lista.add(this.pontos);
 		}
@@ -63,7 +63,7 @@ public class Jogo {
 
 	}
 
-	// Método que retorne quantas vezes o recorde foi quebrado para "menos"
+	// Método que retorna quantas vezes o recorde foi quebrado para "menos"
 	public int getQuantVezesRecordMenor() {
 		int num = 0;
 		int menor = 0;
@@ -82,7 +82,7 @@ public class Jogo {
 
 	}
 
-	// Método que retorna quantas vezes o recorde foi criado para mais
+	// Método que retorna quantas vezes o recorde foi criado para "mais"
 	public int getQuantVezesRecordMaior() {
 		int num = 0;
 		int maior = 0;
@@ -112,6 +112,7 @@ public class Jogo {
 		return soma;
 
 	}
+	//Metodo que retorna a média dos pontos
 	public Double getMediaPontos() {
 		double soma = 0;
 		double media = 0;
@@ -119,7 +120,7 @@ public class Jogo {
 			soma += lista.get(i);
 			media = soma / (i + 1);
 		}
-		//DecimalFormat f = new DecimalFormat("#.##");
-		return media;//f.format(media);
+		
+		return media;
 	}
 }

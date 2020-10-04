@@ -16,15 +16,13 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import javax.swing.JSeparator;
 
-
+//Tela principal
 public class Home extends javax.swing.JFrame {
 	
 	private JFrame home;
 	private JMenu menuOpcoes;
 
-	/**
-	 * Launch the application.
-	 */
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -39,30 +37,28 @@ public class Home extends javax.swing.JFrame {
 		});
 	}
 
-	/**
-	 * Create the application.
-	 */
+	
 	public Home() {
 		initComponents();
 		
 	}
 
-	/**
-	 * Initialize the contents of the frame.
-	 */
+	
 	private void initComponents() {
+		//inicializacao e parametrizacao dos componetes da tela
 		home = new JFrame();
 		home.setTitle("Basquete");
 		home.setSize(400, 400);
 		home.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+		//Menu
 		JMenuBar menuBar = new JMenuBar();
 		menuBar.setToolTipText("");
 		home.setJMenuBar(menuBar);
 		menuOpcoes = new JMenu("Menu");
 		menuBar.add(menuOpcoes);
 		
-		
+		//Opcoes do Menu
 		JMenuItem mnItemNovo = new JMenuItem("Registrar Jogo");
 		menuOpcoes.add(mnItemNovo);
 		
