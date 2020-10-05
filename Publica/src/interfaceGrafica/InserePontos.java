@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
+//Tela para inserir e controlar pontos
 public class InserePontos extends javax.swing.JFrame{
 	
 	Jogo jogo = new Jogo();
