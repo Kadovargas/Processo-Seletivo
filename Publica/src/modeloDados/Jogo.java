@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Jogo {
 
-	// Atributos
+	// Atributos da classe
 	private int pontos;
 	private static ArrayList<Integer> lista = new ArrayList<Integer>();
 
